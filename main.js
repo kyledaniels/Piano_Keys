@@ -9,19 +9,15 @@ keys.forEach((key)=>{
 const keyPlay = (event)=>{
      event.target.style.backgroundColor = 'green'
 }
-
 const keyReturn = (event)=>{
     event.target.style.backgroundColor = ''
 }
-
-
 
 // Write a named function with event handler properties
 let eventAssignment = (note)=>{
        note.onmousedown = ()=>{
            keyPlay(event)
             }
-
        note.onmouseup = ()=>{
             keyReturn(event)
                 }    
@@ -30,7 +26,6 @@ let eventAssignment = (note)=>{
 // Write a loop that runs the array elements through the function
 
 notes.forEach(eventAssignment);
-
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
@@ -47,7 +42,10 @@ nextThree.hidden = true;
 startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
-
+nextOne.onclick = ()=>{
+   nextTwo.hidden=false;
+   nextOne.hidden=true;
+}
 
 // Write anonymous event handler property and function for the second progress button
 
