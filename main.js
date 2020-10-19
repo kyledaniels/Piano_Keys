@@ -45,9 +45,17 @@ startOver.hidden= true;
 nextOne.onclick = ()=>{
    nextTwo.hidden=false;
    nextOne.hidden=true;
+   document.getElementById('letter-note5').innerHTML='D';
+   document.getElementById('letter-note6').innerHTML='C';
 }
 
 // Write anonymous event handler property and function for the second progress button
+nextTwo.onclick = ()=>{
+    nextThree.hidden=false;
+    nextTwo.hidden=true;
+    document.getElementById('word-five').innerHTML='Dear';
+    document.getElementById('word-6').innerHTML='FRI-';
+ }
 
 
 // Write anonymous event handler property and function for the third progress button
